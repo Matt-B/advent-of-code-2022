@@ -27,7 +27,6 @@ class Day02Test {
     @Test
     fun `Part 2 - Can solve provided example`() {
         val answer = Day02().solvePart2(exampleInputs)
-        println("Answer is $answer")
         assert(answer == 12)
     }
 
@@ -35,6 +34,6 @@ class Day02Test {
     fun `Part 2 - Can solve full exercise`() {
         val inputs = File("src/test/resources/day2.txt").readLines()
         val answer = Day02().solvePart2(inputs)
-        println("Answer is $answer")
+        assert(answer == 12014)
     }
 }
